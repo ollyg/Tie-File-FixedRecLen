@@ -4,7 +4,9 @@ use strict;
 use warnings FATAL => 'all';
 
 use 5.008;
-our $VERSION = 0.4;
+
+our $VERSION = '1.01';
+$VERSION = eval $VERSION; # numify for warning-free dev releases
 
 use base 'Tie::File';
 die "Tie::File::FixedRecLen written for Tie::File 0.97 ($Tie::File::VERSION)\n"
@@ -252,7 +254,7 @@ Tie::File::FixedRecLen - Fixed Length Record support for Tie:File
 
 =head1 VERSION
 
-This document refers to version 0.4 of Tie::File::FixedRecLen.
+This document refers to version 1.01 of Tie::File::FixedRecLen.
 
 =head1 SYNOPSIS
 
@@ -497,19 +499,10 @@ able to get the performance I wanted out of this project.
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright (c) The University of Oxford 2007. All Rights Reserved.
+Copyright (c) The University of Oxford 2008.
 
-This program is free software; you can redistribute it and/or modify it under
-the terms of version 2 of the GNU General Public License as published by the
-Free Software Foundation.
-
-This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with
-this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
-St, Fifth Floor, Boston, MA 02110-1301 USA
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
 
 =cut
 
