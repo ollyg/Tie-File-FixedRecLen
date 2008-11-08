@@ -1,17 +1,20 @@
-MANIFEST
-META.yml
-INSTALL
-README
-Changes
 ACKNOWLEDGEMENTS
-Makefile.PL
+Changes
+inc/Module/Install.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
+INSTALL
 lib/Tie/File/FixedRecLen.pm
 lib/Tie/File/FixedRecLen/Store.pm
-debian/changelog
-debian/compat
-debian/control
-debian/copyright
-debian/rules
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+README
 t/00_version.t
 t/01_gen.t
 t/02_fetchsize.t
@@ -51,3 +54,5 @@ t/40_abs_cache.t
 t/41_heap.t
 t/42_offset.t
 t/90_store.t
+t/pod-coverage.t
+t/pod.t

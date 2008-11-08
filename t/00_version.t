@@ -2,7 +2,7 @@
 
 print "1..1\n";
 
-my $testversion = "0.4";
+my $testversion = "1.01";
 
 BEGIN {
     eval {require Tie::File::FixedRecLen};
