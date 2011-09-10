@@ -5,12 +5,7 @@ use warnings FATAL => 'all';
 
 use 5.008;
 
-our $VERSION = '1.01';
-$VERSION = eval $VERSION; # numify for warning-free dev releases
-
 use base 'Tie::File';
-die "Tie::File::FixedRecLen written for Tie::File 0.97 ($Tie::File::VERSION)\n"
-    if $Tie::File::VERSION ne '0.97';
 # v.0.97 says: "This version promises absolutely nothing about the internals,
 # which may change without notice. A future version of the module will have a
 # well-defined and stable subclassing API."
@@ -246,15 +241,7 @@ sub _extend_file_to {
 
 1;
 
-# ===========================================================================
-
-=head1 NAME
-
-Tie::File::FixedRecLen - Fixed Length Record support for Tie:File
-
-=head1 VERSION
-
-This document refers to version 1.01 of Tie::File::FixedRecLen.
+# ABSTRACT: Fixed Length Record support for Tie:File
 
 =head1 SYNOPSIS
 
@@ -479,30 +466,21 @@ Other than that, you can use any write method on the array, for example:
 If you try to operate on the array in any other fashion, for instance to
 C<pop> an element, the module will die.
 
-=head1 DEPENDENCIES
-
-There are no dependencies other than the contents of the Perl 5.008 distribution.
-
-=head1 AUTHOR
-
-Oliver Gorwits C<< <oliver.gorwits@oucs.ox.ac.uk> >>
-
 =head1 ACKNOWLEDGEMENTS
+
+=over 4
+
+=item *
 
 Naturally this would not be here without the excellent Tie::File module.
 
-Anyone who has assisted with bug reports, etc, will be mentioned in the
-bundled ACKNOWLEDGEMENTS file.
+=item *
 
-Thanks to my fiancee Suzanne, for her patience whilst I whined about not being
+Tie::File::VERSION check bug - Tom Hukins
+
+=item *
+
+Thanks to my wife Suzanne, for her patience whilst I whined about not being
 able to get the performance I wanted out of this project.
 
-=head1 COPYRIGHT & LICENSE
-
-Copyright (c) The University of Oxford 2008.
-
-This library is free software; you can redistribute it and/or modify it under
-the same terms as Perl itself.
-
-=cut
-
+=back

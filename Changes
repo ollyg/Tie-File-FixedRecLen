@@ -1,3 +1,8 @@
+{{$NEXT}}
+
+  * Port to Dist::Zilla
+  * Remove version check on Tie::File - seems now a strange value!
+
 libtie-file-fixedreclen-perl (1.01-1) UNRELEASED; urgency=low
 
   * Move to Module::Install 
