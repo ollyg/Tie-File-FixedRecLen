@@ -1,4 +1,4 @@
-{{$NEXT}}
+2.112530  2011-09-10 14:20:36 Europe/London
 
   * Port to Dist::Zilla
   * Remove version check on Tie::File - seems a strange value (D. Walrond)
