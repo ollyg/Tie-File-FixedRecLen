@@ -1,7 +1,7 @@
 {{$NEXT}}
 
   * Port to Dist::Zilla
-  * Remove version check on Tie::File - seems now a strange value!
+  * Remove version check on Tie::File - seems a strange value (D. Walrond)
 
 libtie-file-fixedreclen-perl (1.01-1) UNRELEASED; urgency=low
 
